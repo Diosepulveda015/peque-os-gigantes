@@ -1,0 +1,189 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #bfe8f5;
+  margin: 0;
+}
+
+  /*EL NAV*/
+
+  .custom-menu {
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  .custom-menu span {
+    width: 40px;
+    height: 6px;
+    background-color: #333;
+    border-radius: 6px;
+  }
+
+  nav a:hover {
+  text-decoration: underline;
+  }
+
+
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/*logo*/
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fbfdff;
+}
+
+/*perfil*/
+.perfil-usuario {
+  background: #f2f2f2; /* o el color que quieras */
+  padding: 25px 35px;
+  border-radius: 20px;
+
+  max-width: 1680px;   /* 👈 limita el ancho */
+  margin: 60px auto;  /* 👈 lo centra */
+}
+
+
+.perfil-contenido {
+  display: flex;
+  justify-content: space-evenly; /* 👈 los centra en vez de separarlos */
+  align-items: center;
+  gap: 30px; /* 👈 controla qué tan juntos están */
+  flex-wrap: wrap; /*para responsive*/
+}
+
+
+.info-usuario {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.acciones button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f4c95d;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: #f8c471;
+}
+
+
+
+
+
+
+
+/* PROGRESO */
+
+.progreso h2 {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.materias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.materia {
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.materia:hover {
+  transform: scale(1.05);
+}
+
+.matematicas { background: #fff3cd; }
+.espanol { background: #f8d7da; }
+.ciencias { background: #d4edda; }
+.ingles { background: #d1ecf1; }
+
+.nivel {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.amarillo { background: #ffc107; }
+.rojo { background: #dc3545; color: white; }
+.verde { background: #28a745; color: white; }
+.azul { background: #17a2b8; color: white; }
+
+.estrellas {
+  color: gold;
+  font-size: 18px;
+}
+
+.boton-aprender {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-verde {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+
+.btn-verde:hover {
+  background: #22b463;
+}
+
+
+footer {
+text-align: center;
+margin-top: 40px;
+font-size: 0.9em;
+color: #666;
+}
+
+
+.centrado {
+text-align: center;
+}
+
+
+/*editar-perfil*/
