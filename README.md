@@ -1,2 +1,2 @@
-# peque-os-gigantes
+# pequeños-gigantes
 e-learning-educacion
