@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa - 1° Primaria</title>
+    <link rel="stylesheet" href="/frontend/css/conte.css">
+</head>
+<body>
+
+    <div id="menu-principal" class="container">
+        <h1>🇨🇴 Escuela en Casa</h1>
+        <div id="marcador-global">⭐ Estrellas ganadas: <span id="global-pts">0</span></div>
+        
+        <div class="grid-materias">
+            <div class="card">
+                <img src="https://img.freepik.com/vector-gratis/cientifico-loco-personaje-caricatura-objetos-laboratorio_1308-111103.jpg" alt="Ciencias">
+                <p>Ciencias</p>
+                <button class="btn-empezar" onclick="abrirMateria('ciencias')">EMPEZAR</button>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/vector-premium/ninos-leyendo-libro-gigante_29937-2342.jpg" alt="Español">
+                <p>Español</p>
+                <button class="btn-empezar" onclick="abrirMateria('espanol')">EMPEZAR</button>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/vector-premium/lindo-nino-cavernicola-dibujos-animados-mamut_353337-671.jpg" alt="Sociales">
+                <p>Sociales</p>
+                <button class="btn-empezar" onclick="abrirMateria('sociales')">EMPEZAR</button>
+            </div>
+            <div class="card">
+                <img src="https://w7.pngwing.com/pngs/434/960/png-transparent-snoopy-peanuts-desktop-cartoon-snoopy-smiley-fictional-character-peanuts.png" alt="Ingles">
+                <p>Ingles</p>
+                <button class="btn-empezar" onclick="abrirMateria('ingles')">EMPEZAR</button>
+            </div>
+            <div class="card">
+                <img src="https://googleusercontent.com/image_generation_content/0" alt="Mate">
+                <p>Matemáticas</p>
+                <button class="btn-empezar" onclick="abrirMateria('matematicas')">EMPEZAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="juego" class="container" style="display:none;">
+        <button onclick="irAlMenu()" class="btn-volver">⬅ Menú Principal</button>
+        <h2 id="titulo-materia">Materia</h2>
+        <div id="contenido-pregunta"></div>
+    </div>
+
+    <script src="/frontend/js/app.conte.js"></script>
+</body>
+</html>

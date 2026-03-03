@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materias | Pequeños Gigantes</title>
+  <!-- Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <!-- NAV -->
+<nav style="display:flex; justify-content:flex-end; background-color:#0dcaf0; padding:10px;">
+  <div class="dropdown">
+
+    <button class="custom-menu"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <a class="dropdown-item" href="perfil.html">Perfil</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="contacto.html">Contacto</a>
+      </li>
+    </ul>
+
+  </div>
+
+</nav>
+
+
+  <header>
+    <h1>Materias disponibles</h1>
+    <p>¡Elige una materia y empieza a aprender jugando!</p>
+  </header>
+
+  <main>
+    <section class="materias-menu">
+
+      <div class="materia">
+        <a href="#matematicas">
+          <img src="img/matematicas.png" alt="Matemáticas">
+          <h2>Matemáticas</h2>
+          <button class="btn-empezar" onclick="window.location.href='materias.html?materia=matematicas'">EMPEZAR</button>
+        </a>
+      </div>
+
+      <div class="materia">
+        <a href="#ciencias">
+          <img src="img/ciencias.png" alt="Ciencias">
+          <h2>Ciencias</h2>
+          <button class="btn-empezar" onclick="window.location.href='materias.html?materia=ciencias'">EMPEZAR</button>
+        </a>
+      </div>
+
+      <div class="materia">
+        <a href="#espanol">
+          <img src="img/español.png" alt="Español">
+          <h2>Español</h2>
+          <button class="btn-empezar" onclick="window.location.href='materias.html?materia=espanol'">EMPEZAR</button>
+        </a>
+      </div>
+
+      <div class="materia">
+        <a href="#sociales">
+          <img src="img/historia.png" alt="Historia">
+          <h2>Sociales</h2>
+          <button class="btn-empezar" onclick="window.location.href='materias.html?materia=sociales'">EMPEZAR</button>
+        </a>
+      </div>
+
+      <div class="materia">
+        <a href="#ingles">
+          <img src="img/geografia.png" alt="Geografía">
+          <h2>Ingles</h2>
+          <button class="btn-empezar" onclick="window.location.href='materias.html?materia=ingles'">EMPEZAR</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pequeños Gigantes</p>
+  </footer>
+
+  <script src="/frontend/js/app.js"></script>
+
+  <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

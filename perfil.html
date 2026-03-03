@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+<nav class="navbar px-4" style="background-color:#bfe8f5;">
+  <div class="container-fluid justify-content-end">
+
+    <div class="dropdown">
+      <button class="btn custom-menu" type="button" data-bs-toggle="dropdown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="menu.html">Volver</a></li>
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <header>
+    <h1>Tu perfil</h1>
+    <p>¡Hola, Mariana! Este es tu espacio personal</p>
+  </header>
+
+  <main>
+    <!-- PERFIL -->
+  <section class="perfil-usuario card">
+
+  <div class="perfil-contenido">
+
+    <!-- IZQUIERDA -->
+    <div class="info-usuario">
+      <div class="avatar">
+        <img src="../frontend/img/logo.png" alt="Avatar del usuario">
+      </div>
+
+      <div class="datos">
+        <h2>Mariana Pérez</h2>
+        <p>🎂 7 años</p>
+        <p>📘 Segundo</p>
+        <p>💳 Plan Familiar</p>
+      </div>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="acciones">
+      <button id="btnEditar">Editar Perfil</button>
+      <button id="btnPassword">Cambiar Contraseña</button>
+      <button id="btnCerrar" class="btn-danger">Cerrar Sesión</button>
+    </div>
+
+    <script src="/frontend/js/app.js"></script>
+
+
+  </div>
+
+</section>
+
+
+    <!-- PROGRESO -->
+    <section class="progreso card">
+      <h2><center>✨ Mi Progreso</center></h2>
+
+      <div class="materias" id="lista-progreso">
+  <!-- Dejaremos los div vacíos o con la estructura base y el JS llenará los datos -->
+  <div class="materia matematicas">
+    <h3>Matemáticas</h3>
+    <span class="nivel">Nivel - %</span>
+    <p>Esperando inicio...</p>
+    <div class="estrellas"></div>
+  </div>
+  
+  <div class="materia espanol">
+    <h3>Español</h3>
+    <span class="nivel">Nivel - %</span>
+    <p>Esperando inicio...</p>
+    <div class="estrellas"></div>
+  </div>
+
+  <div class="materia ciencias">
+    <h3>Ciencias</h3>
+    <span class="nivel">Nivel - %</span>
+    <p>Esperando inicio...</p>
+    <div class="estrellas"></div>
+  </div>
+
+  <div class="materia ingles">
+    <h3>Inglés</h3>
+    <span class="nivel">Nivel - %</span>
+    <p>Esperando inicio...</p>
+    <div class="estrellas"></div>
+  </div>
+</div>
+
+    <div class="boton-aprender">
+      <a href="menu.html" class="btn-verde">Seguir aprendiendo</a>
+    </div>
+
+
+    </section>
+
+  </main>
+<script src="/frontend/js/app.conte.js"></script>
+  <footer>
+    <p>&copy; 2026 Pequeños Gigantes</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
